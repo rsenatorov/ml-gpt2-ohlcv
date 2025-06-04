@@ -68,38 +68,38 @@ pip install -r requirements.txt
 1. **Prepare data**
 
    ```bash
-   python src/normalize_market_data.py
-   python src/tokenize_normalized_data.py
+   python ml-gpt2-ohlcv-data/src/normalize_market_data.py
+   python ml-gpt2-ohlcv-data/src/tokenize_normalized_data.py
    ```
 
 2. **Train**
 
    ```bash
-   python src/train.py
+   python ml-gpt2-ohlcv-train/src/train.py
    ```
 
-   Checkpoints are written to `checkpoints/checkpointN.pth`.
+   Checkpoints are written to `ml-gpt2-ohlcv-train/checkpoints/checkpointN.pth`.
 
 3. **Evaluate**
 
    ```bash
-   python src/eval_trade_sim.py   # PnL curve
-   python src/eval_conf.py        # survival curve
-   python src/infer.py            # classification metrics
+   python ml-gpt2-ohlcv-train/src/eval_trade_sim.py    # PnL curve
+   python ml-gpt2-ohlcv-train/src/eval_conf.py         # survival curve
+   python ml-gpt2-ohlcv-train/src/infer.py             # classification metrics
    ```
 
 ## Reproducing the 3ᴿᴰ‑epoch results
 
-With the provided AAPL M5 dataset (`data/test/market_data/AAPLUSUSD_M5.csv`)
+With the provided AAPL M5 dataset (`ml-gpt2-ohlcv-train/data/test/market_data/AAPLUSUSD_M5.csv`)
 and the default config:
 
 ```bash
-python src/train.py          # 3 epochs → checkpoint3.pth
-python src/eval_trade_sim.py # uses checkpoint3 by default
+python ml-gpt2-ohlcv-train/src/train.py          # 3 epochs → checkpoint3.pth
+python ml-gpt2-ohlcv-train/src/eval_trade_sim.py # uses checkpoint3 by default
 ```
 
 The script will log a **total profit of ≈ $811** and a **55 % direction hit‑rate**
-across ~473 k trades on the test split.
+across ~100 k trades on the test split.
 
 ## Limitations & disclaimer
 
