@@ -5,7 +5,7 @@ A GPT‑2‑style language‑model pipeline for **financial time‑series**.
 Instead of predicting the *next word*, the model predicts the **next OHLCV “token”** for an instrument such as AAPL on a 5‑minute timeframe.
 
 *Trained on ~24 M context‑window samples, the model reached the results below after three epochs.*
-*The PnL was calculated from the aapl, do note that the model was trained on crypto, forex, and mineral (never has seen the stock market)*
+*The PnL was calculated from the aapl ticker, do note that the model was trained on crypto, forex, and on some minerals on various time frames but has never has seen the stock market*
 
 | Epoch | Train Loss | Val Loss |
 |------:|-----------:|---------:|
