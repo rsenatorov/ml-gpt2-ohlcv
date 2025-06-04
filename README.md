@@ -121,6 +121,6 @@ If you build on this work, please cite it:
   author = {Robert Senatorov},
   title  = {ml-gpt2-ohlcv: GPT‑2 language model for OHLCV token prediction},
   year   = {2025},
-  url    = {https://github.com/your‑handle/ml-gpt2-ohlcv}
+  url    = {https://github.com/rsenatorov/ml-gpt2-ohlcv.git}
 }
 ```
