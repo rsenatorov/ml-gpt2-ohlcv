@@ -1,0 +1,9 @@
+torch>=2.2.0
+numpy>=1.26
+pandas>=2.2
+tqdm>=4.66
+scikit-learn>=1.4
+matplotlib>=3.8
+joblib>=1.4
+requests>=2.32
+vector-quantize-pytorch>=0.4.8
