@@ -58,7 +58,7 @@ infer.py                   full classification & trend metrics
 ## Quick‑start
 
 ```bash
-git clone https://github.com/your‑handle/ml-gpt2-ohlcv.git
+git clone https://github.com/rsenatorov/ml-gpt2-ohlcv.git
 cd ml-gpt2-ohlcv
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
