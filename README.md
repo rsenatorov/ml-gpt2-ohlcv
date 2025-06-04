@@ -2,9 +2,10 @@
 # ml-gpt2-ohlcv
 
 A GPT‑2‑style language‑model pipeline for **financial time‑series**.  
-Instead of predicting the *next word*, the model predicts the **next OHLCV “token”** for an instrument such as AAPL on a 5‑minute timeframe (do note the model was only trained with the forex and crypto market and was able to receive these results on the stock market from aapl).
+Instead of predicting the *next word*, the model predicts the **next OHLCV “token”** for an instrument such as AAPL on a 5‑minute timeframe.
 
 *Trained on ~24 M context‑window samples, the model reached the results below after three epochs.*
+*The PnL was calculated from the aapl, do note that the model was trained on crypto, forex, and mineral (never has seen the stock market)*
 
 | Epoch | Train Loss | Val Loss |
 |------:|-----------:|---------:|
