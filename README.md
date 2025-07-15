@@ -23,7 +23,7 @@ Instead of predicting the *next word*, the model predicts the **next OHLCV “to
 | Direction accuracy @ 50 % confidence | 77.02 % (only 0.83 % of cases) |
 | Token accuracy @ 50 % confidence | 51.26 % |
 
-> **Note** These are *research* numbers. Real‑world trading incurs latency, slippage and exchange fees; live performance would be lower.
+> **Note** These are *research* numbers. Real‑world trading incurs latency, slippage and exchange fees; live performance would be lower. The PnL was calculated assuming you bought at the open and exited at the close of the candle.
 
 ## What this repo does
 1. **Normalise** raw OHLCV CSVs with a 100‑bar, per‑row stochastic scaler.<br>
